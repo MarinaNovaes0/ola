@@ -1,0 +1,109 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #160026;
+    background: linear-gradient(270deg, rgba(22, 0, 38, 1) 0%, rgb(53, 3, 103) 50%, rgba(22, 0, 38, 1) 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#app h2 {
+    color: #ffffff !important;
+}
+
+.container {
+    margin: auto;
+    height: 100px;
+}
+
+
+#app {
+    width: 450px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(92, 9, 144);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgb(191, 95, 255), 0 0 10px rgb(197, 120, 248), inset 0 0 5px rgb(167, 34, 255);
+    
+  
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #cf9cff;
+    transition: background 0.3s ease;
+}
+
+li span {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-shadow: 0 0 5px rgb(167, 34, 255), 0 0 10px rgb(167, 34, 255);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    flex: 1; /* ocupa o espaço disponível */
+    word-wrap: break-word; /* quebra de linha automática */
+    word-break: break-word; /* quebra mesmo em palavras longas */
+    white-space: pre-wrap; /* preserva espaços e quebra de linha */
+    text-align: left; 
+    
+}
+
+li span:hover {
+    color: #cf9cff;
+    text-shadow: 0 0 8px rgb(167, 34, 255), 0 0 20px rgb(167, 34, 255);
+}
+
+li:hover {
+    background: rgba(187, 186, 186, 0.231);
+    border-bottom:none;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(207, 156, 255);
+    transition: all 0.25s;
+    color: rgb(167, 34, 255);
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+   
+}
+
+button:hover {
+    background: rgb(167, 34, 255);
+    color: #0f2027;
+    box-shadow: 0 0 10px rgb(167, 34, 255), 0 0 20px rgb(167, 34, 255);
+}
+
+.textarea {
+    width: 300px;
+    background: rgba(239, 231, 231, 0.05);
+    color: rgb(167, 34, 255);
+    border: 1px solid rgba(0, 255, 234, 0.6);
+    padding: 8px;
+    border-radius: 6px;
+    overflow-wrap: break-word;
+    white-space: normal;
+    resize: none;
+    font-family: 'Courier New', monospace;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(167, 34, 255), 0 0 30px rgb(167, 34, 255);
+    background: rgba(0, 255, 234, 0.1);
+}
